@@ -1,5 +1,3 @@
-
-
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Poppins:wght@500&display=swap");
 * {
   margin: 0;
@@ -16,784 +14,778 @@ html {
 }
 
 nav {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    left: 0;
-    transition: 0.5s ease-out;
-  }
-  
-  nav:hover{
-    background-color: #0000009f;
-    transition: 0.5s ease-in;
-  }
-  
-  nav .wrapper {
-    position: relative;
-    max-width: 100%;
-    padding: 0 30px;
-    height: 12vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-  }
-  
-  .wrapper .logo {
-    color: #fff;
-    font-size: 35px;
-    font-weight: 500;
-  }
-  
-  .wrapper .nav-links {
-    display: inline-flex;
-  }
-  .nav-links li {
-    list-style: none;
-    letter-spacing: 1px;
-  }
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: 0.5s ease-out;
+}
+
+nav:hover {
+  background-color: #0000009f;
+  transition: 0.5s ease-in;
+}
+
+nav .wrapper {
+  position: relative;
+  max-width: 100%;
+  padding: 0 30px;
+  height: 12vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.wrapper .logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 500;
+}
+
+.wrapper .nav-links {
+  display: inline-flex;
+}
+.nav-links li {
+  list-style: none;
+  letter-spacing: 1px;
+}
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 22px;
+  padding: 0 20px;
+  transition: color 0.5s;
+}
+.nav-links li a:hover {
+  color: #ff4c4c;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  background-image: url(../assets/Cars/offer-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.headerImg {
+  position: relative;
+  top: 300px;
+  left: 300px;
+  width: 600px;
+  height: 300px;
+  background-color: transparent;
+  background-image: url(../assets/Cars/offer.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.content {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  top: 400px;
+  left: 100px;
+  height: fit-content;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.content p {
+  border-left: 1px solid #ff4c4c;
+  padding-left: 10px;
+  color: #eee;
+  font-size: 25px;
+  text-transform: none;
+  width: 400px;
+}
+
+.content h1 {
+  font-family: "Barlow Condensed";
+}
+
+.content h1:nth-child(1) {
+  color: #fff;
+}
+
+.content h1:nth-child(2) {
+  color: #ff4c4c;
+}
+
+/* ---------------------Shop------------------------- */
+
+/* -----------Cars Section----------- */
+.carsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(32, 32, 34, 1) 51%,
+    rgba(0, 0, 0, 1) 95%
+  );
+}
+
+.titleLogo {
+  position: relative;
+  top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+}
+
+.titleLogo h1 {
+  width: fit-content;
+  border-left: 1px solid #ff4c4c;
+  padding-left: 10px;
+  font-size: 35px;
+  color: #eee;
+}
+
+.titleLogo img {
+  padding-top: 20px;
+  width: 100px;
+  height: 100px;
+}
+
+.CarImg {
+  position: relative;
+  top: 50px;
+  width: 400px;
+  height: 400px;
+  background-image: url(../assets/Cars/header.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.info {
+  padding: 10px;
+  border-radius: 20px;
+  position: relative;
+  top: 80px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: fit-content;
+  height: 200px;
+}
+
+.info h1 {
+  font-size: 30px;
+  font-weight: 100;
+  color: #eeee;
+  padding: 20px;
+}
+
+.info p {
+  color: #eeee;
+}
+
+.info1 {
+  border-left: 1px solid #ff4c4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.info2 {
+  border-left: 1px solid #ff4c4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+.info3 {
+  border-left: 1px solid #ff4c4c;
+  border-right: 1px solid #ff4c4c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+}
+
+/* -----------About----------- */
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(32, 32, 34, 1) 51%,
+    rgba(0, 0, 0, 1) 95%
+  );
+}
+
+.about1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.innerAbout1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+
+.innerAbout1 img {
+  width: 100%;
+  height: 100%;
+}
+.innerAbout2 {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.innerAbout2 h1 {
+  padding-top: 100px;
+  padding-left: 50px;
+  color: #ff4c4c;
+  font-size: 30px;
+  font-weight: 100;
+}
+
+.innerAbout2 p {
+  padding-top: 30px;
+  padding-left: 50px;
+  font-size: 22px;
+  color: #eeee;
+  width: 500px;
+}
+
+.about2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 30vh;
+}
+
+.about2 h1 {
+  font-size: 36px;
+  color: #eeee;
+  font-weight: 100;
+  border-left: 1px solid #ff4c4c;
+  padding-left: 10px;
+}
+
+/* -----------Products----------- */
+
+.products {
+  width: 100%;
+  /* height: 100vh; */
+  height: fit-content;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 4%,
+    rgba(32, 32, 34, 1) 51%,
+    rgba(0, 0, 0, 1) 95%
+  );
+}
+
+.productsItems {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 600px;
+  border-radius: 30px;
+  background-color: #3333;
+}
+
+.carImage {
+  width: 350px;
+}
+
+.product h1,
+p {
+  color: #eeee;
+  padding: 10px;
+}
+
+.product img {
+  padding-right: 5px;
+}
+
+.iconsTopDiv {
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* -----------Footer----------- */
+
+footer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(../assets/Image2.png);
+  background-size: cover;
+  overflow: hidden;
+}
+
+footer p {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-content h1 {
+  color: #fff;
+  font-size: 70px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact .cover {
+  padding: 15px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.cover h3 {
+  color: #ff4c4c;
+}
+
+.cover p {
+  color: whitesmoke;
+}
+
+/* -----------Responsive----------- */
+
+@media screen and (max-width: 2715px) {
   .nav-links li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 22px;
-    padding: 0 20px;
-    transition: color 0.5s;
-  }
-  .nav-links li a:hover {
-    color: #ff4c4c;
+    font-size: 26px;
   }
 
-  .hamburger{
-    display: none;
-    cursor: pointer;
-  }
-
-  .bar{
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: white;
-  }
-  
-  header{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../assets/Cars/offer-bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    position: relative;
-  }
-
-  .headerImg{
-    position: relative;
-    top: 300px;
-    left: 300px;
-    width: 600px;
-    height: 300px;
-    background-color: transparent;
-    background-image: url(../assets/Cars/offer.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-  
-  .content {
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    top: 400px;
-    left: 100px;
-    height: fit-content;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
-
-  .content p{
-    border-left: 1px solid #ff4c4c;
-    padding-left: 10px;
-    color: #eee;
-    font-size: 25px;
-    text-transform: none;
-    width: 400px; 
-  }
-  
   .content h1 {
-    font-family: "Barlow Condensed";
-  }
-  
-  .content h1:nth-child(1) {
-    color: #fff;
-  }
-  
-  .content h1:nth-child(2) {
-    color: #ff4c4c;
+    font-size: 100px;
   }
 
-  /* ---------------------Shop------------------------- */
-
-
-
-  /* -----------Cars Section----------- */
- .carsSection{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(32,32,34,1) 51%, rgba(0,0,0,1) 95%);
-  }
- 
-  .titleLogo{
-    position: relative;
-    top: 40px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    height: fit-content;
-  }
-
-  .titleLogo h1{
-    width: fit-content;
-    border-left: 1px solid #ff4c4c;
-    padding-left: 10px;
-    font-size: 35px;
-    color: #eee;
-  }
-
-  .titleLogo img{
-    padding-top: 20px;
-    width: 100px;
-    height: 100px;
-  }
-
-  .CarImg{
-    position: relative;
-    top: 50px;
-    width: 400px;
-    height: 400px;
-    background-image: url(../assets/Cars/header.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-
-  .info{
-    padding: 10px;
-    border-radius: 20px;
-    position: relative;
-    top: 80px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: fit-content;
-    height:200px;
-  }
-
-  .info h1{
-    font-size: 30px; 
-    font-weight: 100;
-    color: #eeee;
-    padding: 20px;
-  }
-
-  .info p{
-    color: #eeee;
-  }
-
-  .info1{
-    border-left: 1px solid #ff4c4c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-  }
-
-  .info2{
-    border-left: 1px solid #ff4c4c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-  }
-
-  .info3{
-    border-left: 1px solid #ff4c4c;
-    border-right: 1px solid #ff4c4c;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-  }
-
- /* -----------About----------- */
- .about{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(32,32,34,1) 51%, rgba(0,0,0,1) 95%); 
-  }
-
-  .about1{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70vh;
-  }
-
-  .innerAbout1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    height: 100%;
-  }
-
-  .innerAbout1 img{
-    width: 100%;
-    height: 100%;
-  }
-  .innerAbout2{
-    width: fit-content;
-    height: fit-content;
-    display: flex; 
-    flex-direction: column;
-    align-items:flex-start;
-  }
-
-  .innerAbout2 h1{
-    padding-top: 100px;
-    padding-left: 50px;
-    color: #ff4c4c;
+  .content p {
     font-size: 30px;
-    font-weight: 100;
   }
 
-  .innerAbout2 p {
-    padding-top: 30px;
-    padding-left: 50px;
-    font-size: 22px;
-    color: #eeee;
-    width: 500px;
-  }
-
-  .about2{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 30vh;
-  }
-
-  .about2 h1{
-    font-size: 36px;
-    color: #eeee;
-    font-weight: 100;
-    border-left: 1px solid #ff4c4c;
-    padding-left: 10px;
-  }
-
-  /* -----------Products----------- */
-
-  .products{
-    width: 100%;
-    height: 100vh;
-    background: rgb(0,0,0);
-    background: linear-gradient(90deg, rgba(0,0,0,1) 4%, rgba(32,32,34,1) 51%, rgba(0,0,0,1) 95%);
-  }
-
-  .productsItems{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .product{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
+  .headerImg {
+    width: 800px;
     height: 600px;
-    border-radius: 30px;
-    background-color: #3333;
   }
 
-  .product h1, p{
-    color: #eeee;
-    padding: 10px;
+  .carsSection {
+    justify-content: center;
+    align-items: center;
   }
 
-  .product img{
-    padding-right: 5px;
+  .about {
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .content h1 {
+    font-size: 80px;
   }
 
-  .iconsTopDiv{
-    padding: 20px; 
-    width: 100%; 
-    display: flex; 
+  .headerImg {
+    width: 600px;
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  #Home {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .content {
+    top: 200px;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+
+  .headerImg {
+    top: 100px;
+  }
+
+  .about1 {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .innerAbout1 {
+    height: 80%;
+  }
+
+  .products {
+    height: fit-content;
+  }
+
+  .productsItems {
     justify-content: space-evenly;
   }
 
-  /* -----------Footer----------- */
-
-  footer {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background-image: url(../assets/Image2.png);
-    background-size: cover;
-    overflow: hidden;
+  .info {
+    top: 20px;
   }
-  
-  footer p{
-    color: whitesmoke;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .contact-content{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .contact-content h1 {
-    color: #fff;
-    font-size: 70px;
-    text-align: center;
-    padding: 20px 0;
-  }
-  
-  .contact{
-    display: flex;
-    flex-direction: row;
-  }
-  
-  .contact .cover {
-    padding: 15px;
-    letter-spacing: 1px;
-    text-align: center;
-  }
-  
-  .cover h3 {
-    color: #ff4c4c;
-  }
-  
-  .cover p {
-    color: whitesmoke ;
-  }
+}
 
-
-  /* -----------Responsive----------- */
-  
-  @media screen and (max-width: 2715px){
-    .nav-links li a{
-      font-size: 26px;
-    }
-    
-    .content h1{
-      font-size: 100px;
-    }
-
-    .content p{
-      font-size: 30px;
-    }
-
-    .headerImg{
-      width: 800px;
-      height: 600px;
-    }
-
-    .carsSection{
-      justify-content: center;
-      align-items: center;
-    }
-
-    .about{
-      justify-content: center;
-      align-items: center;
-    }
-  
-  }
-  
-  @media screen and (max-width: 2000px){
-    
-    .content h1{
-      font-size: 80px;
-    }
-
-    .headerImg{
-      width: 600px;
-      height: 500px;
-    }
-  
-  }
-
-  @media screen and (max-width: 1700px){
-    #Home{
-      width: 100%;
-      flex-direction: column;
-    }
-
-    .content{
-      top: 200px;
-    }
-
-    .content h1{
-      font-size: 40px;
-    }
-
-    .content p{
-      font-size: 20px;
-    }
-
-    .headerImg{
-      top: 100px;
-    }
-
-    .about1{
-      justify-content: center;
-      align-items: center;
-    }
-
-    .innerAbout1{
-      height: 80%;
-    }
-
-    .products{
-      height: 250vh;
-    }
-
-    .productsItems{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .info{
-      top: 20px;
-    }
-
-  }
-  
-  @media screen and (max-width: 1400px){
-    
-   .about1{
+@media screen and (max-width: 1400px) {
+  .about1 {
     background-image: url(../assets/Cars/about.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-   } 
+  }
 
-   .innerAbout1 img{
-      display: none;
-   }
+  .innerAbout1 img {
+    display: none;
+  }
 
-   .innerAbout2{
+  .innerAbout2 {
     background-color: rgba(128, 128, 128, 0.589);
     border-radius: 30px;
-   }
-
-   
-  
   }
-  
-  
-  @media screen and (max-width: 1100px) {
-    
-    
+}
 
-    .innerAbout2{
-      position: absolute;
-    }
+@media screen and (max-width: 1100px) {
+  .innerAbout2 {
+    position: absolute;
   }
-  
-  @media screen and (max-width: 950px) {
-    .nav-links li a{
-      font-size: 20px;
-    }
-   
-    .content h1{
-      font-size: 40px;
-   }
+}
 
-   .content p{
+@media screen and (max-width: 950px) {
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #0000009f;
+    color: #eeee;
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-links li {
+    margin: 16px 0;
+  }
+
+  .nav-links.active {
+    left: 0;
+  }
+
+  .content h1 {
+    font-size: 40px;
+  }
+
+  .content p {
     font-size: 20px;
-   }
-
-   .headerImg{
-      left: 100px;
-   }
-  
   }
-  
-  @media screen and (max-width: 700px) {
-    .headerImg{
-      left: 0px;
-    }
 
-    .hamburger{
-      display: block;
-    }
-
-    .hamburger.active .bar:nth-child(2){
-      opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1){
-      transform: translateY(8px) rotate(45deg);
-    }
-    .hamburger.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .nav-links{
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      flex-direction: column;
-      background-color: #0000009f;
-      color: #eeee;
-      width: 100%;
-      text-align: center;
-      transition: 0.3s;
-    }
-
-    .nav-item{
-      margin: 16px 0;
-    }
-
-    .nav-links.active{
-      left: 0;
-    }
-  
+  .headerImg {
+    left: 100px;
   }
-  
-  
-  @media screen and (max-width: 650px) {
-    
-    .content{
-      top: 300px;
-      left: 50px;
-      width: 350px;
-    }
+}
 
-    .content h1{
-      font-size: 30px;
-      width: fit-content;
-    }
-
-    .content p{
-      font-size: 20px;
-      width: fit-content;
-    }
-
-    .headerImg{
-      width: 400px;
-      height: 200px;
-      top: 400px;
-    }
-
-    .CarImg{
-      width: 300px;
-      height: 300px;
-    }
-
-    .info{
-      padding: 0;
-    }
-
-    .info1, .info2, .info3{
-      width: 150px;
-    }
-
-    .innerAbout2{
-      width: 400px;
-      height: 600px;
-    }
-
-    .innerAbout2 h1{
-        font-size: 20px;
-    }
-
-    .innerAbout2 p{
-      padding-left: 0px;
-      width: 100%;
-      height: 100%;
-      font-size: 15px;
-    }
-
-    .product{
-      width: 300px;
-      height: 500px;
-    }
-
-    .porche{
-      width:400px;
-      height:180px;
-    }
-
-    .product h1{
-      font-size: 22px;
-    }
-
-    .product p{
-      font-size: 16px;
-    }
-    
-    
-    /* ----footer----- */
-    footer p{
-      font-size: 80%;
-    }
-  
-    .contact-content h1 {
-      color: #fff;
-      font-size: 50px;
-      text-align: center;
-      padding: 20px 0;
-    }
-  
-    .contact{
-      display: flex;
-      flex-direction: column;
-    }
-
-    .info1, .info2, .info3{
-      width: 100px;
-    }
-
-    .info1 h1, .info2 h1, .info3 h1{
-      font-size: 20px;
-    }
-
-  
+@media screen and (max-width: 700px) {
+  .headerImg {
+    left: 0px;
   }
-  
-  
-  
-  @media screen and (max-width: 480px) {
-  
-    /* -----Products----- */
+}
 
-    .content{
-      left: 20px;
-      width: 300px;
-    }
-
-    .headerImg{
-      width: 300px;
-      height: 200px;
-      top: 300px;
-    }
-
-    .innerAbout2{
-      width: 300px;
-      height: 600px;
-    }
-
-    .porche{
-      width: 320px;
-    }
-    
-    /* ----footer----- */
-    footer p{
-      font-size: 80%;
-    }
-  
-    .contact-content h1 {
-      color: #fff;
-      font-size: 50px;
-      text-align: center;
-      padding: 20px 0;
-    }
-  
-    .contact{
-      display: flex;
-      flex-direction: column;
-    }
+@media screen and (max-width: 650px) {
+  .content {
+    top: 300px;
+    left: 50px;
+    width: 350px;
   }
-  
-  
-  
-  @media screen and (max-width: 375px) {
-  
-    .content{
-      top: 350px;
-      left: 0;
-    }
 
-    .headerImg{
-      top: 400px;
-    }
-    .content h1{
-      font-size: 30px;
-    }  
+  .content h1 {
+    font-size: 30px;
+    width: fit-content;
+  }
 
-    .content p{
-      font-size: 20px;
-    }
-  
-    .titleLogo h1{
-      font-size: 25px;
-    }
+  .content p {
+    font-size: 20px;
+    width: fit-content;
+  }
 
-    .CarImg{
-      width: 250px;
-    }
+  .headerImg {
+    width: 400px;
+    height: 200px;
+    top: 400px;
+  }
 
-    .about2 h1{
-      font-size: 25px;
-    }
+  .carImage {
+    width: 300px;
+    height: auto;
+  }
 
-    .porche{
-      width: 280px;
-    }
+  .product {
+    width: 300px;
+    height: 500px;
+  }
 
-    .iconsTopDiv{
-      width: 250px;
-      padding: 10px;
-    }
-  
-    
+  .porche {
+    width: 400px;
+    height: 180px;
+  }
+
+  .product h1 {
+    font-size: 22px;
+  }
+
+  .product p {
+    font-size: 16px;
+  }
+
+  .info {
+    padding: 0;
+  }
+
+  .info1,
+  .info2,
+  .info3 {
+    width: 150px;
+  }
+
+  .innerAbout2 {
+    width: 400px;
+    height: 600px;
+  }
+
+  .innerAbout2 h1 {
+    font-size: 20px;
+  }
+
+  .innerAbout2 p {
+    padding-left: 0px;
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+  }
+
   /* ----footer----- */
-    
-    footer p{
-      font-size: 10px;
-    }
-  
-    .contact{
-      display: flex;
-      flex-direction: column;
-    }
-    
-  
+  footer p {
+    font-size: 80%;
   }
+
+  .contact-content h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info1,
+  .info2,
+  .info3 {
+    width: 100px;
+  }
+
+  .info1 h1,
+  .info2 h1,
+  .info3 h1 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  /* -----Products----- */
+
+  .content {
+    left: 20px;
+    width: 300px;
+  }
+
+  .headerImg {
+    width: 300px;
+    height: 200px;
+    top: 300px;
+  }
+
+  .innerAbout2 {
+    width: 300px;
+    height: 600px;
+  }
+
+  .porche {
+    width: 320px;
+  }
+
+  /* ----footer----- */
+  footer p {
+    font-size: 80%;
+  }
+
+  .contact-content h1 {
+    color: #fff;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content {
+    top: 350px;
+    left: 0;
+  }
+
+  .headerImg {
+    top: 400px;
+  }
+  .content h1 {
+    font-size: 30px;
+  }
+
+  .content p {
+    font-size: 20px;
+  }
+
+  .titleLogo h1 {
+    font-size: 25px;
+  }
+
+  .CarImg {
+    width: 250px;
+  }
+
+  .about2 h1 {
+    font-size: 25px;
+  }
+
+  .porche {
+    width: 280px;
+  }
+
+  .iconsTopDiv {
+    width: 250px;
+    padding: 10px;
+  }
+
+  /* ----footer----- */
+
+  footer p {
+    font-size: 10px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
