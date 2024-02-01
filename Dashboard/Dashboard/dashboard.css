@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600&family=Poppins:wght@500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  overflow-x: hidden;
+  background-image: url(../assets/DashboardBg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+body h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-shadow: #343f4f;
+  font-style: italic;
+  font-weight: 200;
+  border-left: 2px solid whitesmoke;
+  border-right: 2px solid whitesmoke;
+  background-color: #1d81d39d;
+  padding: 60px;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+#carForm {
+  background-color: #343f4fcc;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  padding: 35px;
+  display: flex;
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+  border: 1px solid whitesmoke;
+  border-bottom: none;
+}
+
+.DashLabel {
+  font-size: 20px;
+  color: #1d81d3;
+  padding: 10px;
+}
+
+.DashInput {
+  background-color: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid whitesmoke;
+  color: whitesmoke;
+}
+
+.DashButton {
+  position: relative;
+  top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #1d81d39d;
+  border: none;
+  color: whitesmoke;
+  font-size: 15px;
+  letter-spacing: 1px;
+  transition: 0.4s ease-out;
+}
+
+.DashButton:hover {
+  border-top-right-radius: 50%;
+  border-bottom-right-radius: 50%;
+  transition: 0.4s ease-in;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 650px) {
+  body h1 {
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body h1 {
+    font-size: 20px;
+  }
+}
