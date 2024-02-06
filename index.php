@@ -159,9 +159,9 @@
 
 
                 <script>
+                  
                     const hamburger = document.querySelector(".hamburger");
                     const navLinks = document.querySelector(".nav-links");
-           
            
                        hamburger.addEventListener("click", () =>{
                        hamburger.classList.toggle("active");
@@ -173,6 +173,7 @@
                           hamburger.classList.remove("active");
                           navLinks.classList.remove("active");
                        }))
+
                </script>
         </body>
     </html>
