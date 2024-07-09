@@ -30,8 +30,8 @@
                 $message = 'Car added successfully!';
             } else {
                 // Update existing car
-                $stmt = $conn->prepare("UPDATE cars SET car_name=?, description=?, image_path=?, price=?, speed=?, owners=? WHERE car_id=?");
-                $stmt->execute([$carName, $carDescription, $carImage, $carPrice, $carSpeed, $carOwners, $carId]);
+                $stmt = $conn->prepare("UPDATE cars SET car_name=?, description=?, image_path=?, price=?, speed=?, owners=? WHERE car_id= 19");
+                $stmt->execute([$carName, $carDescription, $carImage, $carPrice, $carSpeed, $carOwners]);
                 $message = 'Car updated successfully!';
             }
 
